@@ -1,4 +1,134 @@
+@import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+* {
+    box-sizing: border-box;
+}
 
 body{
     background: #23252C;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: Inter;
+}
+
+.main-container{
+    background-color: #1A1B21;
+    max-width:317px;
+    margin: 44px auto;
+    border-radius: 10px;
+    box-shadow: 3px 1px 9px #131418;
+
+}
+
+/* Profile section (img, name, buttons and text)*/
+
+.profile-container{
+    height: 317px;
+    overflow: hidden;
+
+}
+
+.profile-container > img{
+    max-width: 317px;
+    border-radius:  10px 10px 0px 0px;
+}
+
+.info-name{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.info-position{
+    font-size: 12.8px;
+    font-weight: 400;
+    text-align: center;
+    color:#F3BF99;
+}
+.info-web{
+    font-size: 10.2px;
+    font-weight: 400;
+    text-align: center;
+    color:#F5F5F5;
+}
+
+.button-container{
+    margin: 30px 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    padding: 9px 13px 9px 11px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 8px;
+    
+}
+.btn-mail{
+    transition: background-color 0.5s, color 0.5s;
+    background-color: #F5F5F5;
+    color: #374151;
+}
+.btn-mail:hover{
+    background-color: #8b8b8b;
+    color: #F5F5F5;
+}
+.btn-linkedin{
+    transition: background-color 0.2s, color 0.5s;
+    background-color: #5093E2;
+    color:white;
+}
+.btn-linkedin:hover{
+    background-color: #2b517c;
+    color: #F5F5F5;
+}
+
+
+.info-section{
+    margin: 0px 35px;
+    margin-bottom: 20px;
+}
+
+.info-section--title{
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.info-section--text{
+    font-size: 10.2px;
+    font-weight: 400;
+    line-height: 150%;
+    color:#DCDCDC;
+}
+
+
+/* Footer section*/
+
+footer{
+    height: 64px;
+    margin-bottom: 25px;
+    background: #161619;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer--social{
+    margin:24px 24px;
+    font-size: 26px;
+    text-decoration: none;
+    color: #918E9B;
+    transition: color 0.5s;
+}
+.footer--social:hover{
+    color: #F3BF99;
+
 }
